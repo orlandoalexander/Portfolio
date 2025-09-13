@@ -207,7 +207,6 @@ const projects = [
 ];
 
 export default function ProjectsSection() {
-  const [showMore, setShowMore] = useState(false);
   const [activeVideo, setActiveVideo] = useState(null); // track video project
   const [activeTab, setActiveTab] = useState("All");
 
@@ -215,10 +214,6 @@ export default function ProjectsSection() {
     activeTab === "All"
       ? projects
       : projects.filter((p) => p.category.includes(activeTab));
-
-  const visibleProjects = showMore
-    ? filteredProjects
-    : filteredProjects.slice(0, 4);
 
   return (
     <section className="py-10 px-8">
@@ -353,15 +348,6 @@ export default function ProjectsSection() {
             </motion.div>
           ))}
         </div>
-        {/*
-        <div className="flex justify-center mt-8">
-          <button
-            onClick={() => setShowMore(!showMore)}
-            className="px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold shadow-lg hover:bg-blue-700 transition"
-          >
-            {showMore ? "Show Less" : "See More"}
-          </button>
-        </div> */}
       </div>
 
       {activeVideo && (
