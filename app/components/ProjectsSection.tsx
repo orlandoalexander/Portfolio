@@ -207,7 +207,7 @@ const projects = [
 ];
 
 export default function ProjectsSection() {
-  const [activeVideo, setActiveVideo] = useState(null); // track video project
+  const [activeVideo, setActiveVideo] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState("All");
 
   const filteredProjects =
@@ -301,11 +301,12 @@ export default function ProjectsSection() {
                     <button
                       onClick={() => {
                         if (project.video) {
-                          setActiveVideo(project); // show video popup
+                          setActiveVideo(project.video); // show video popup
                         } else if (project.file) {
                           const link = document.createElement("a");
                           link.href = project.file;
-                          link.download = project.file.split("/").pop(); // gets the filename
+                          link.download =
+                            project.file.split("/").pop() || "download";
                           document.body.appendChild(link);
                           link.click();
                           document.body.removeChild(link);
@@ -361,7 +362,7 @@ export default function ProjectsSection() {
             className="w-full max-w-3xl h-auto max-h-[80vh] object-contain rounded-md shadow-lg"
             onClick={(e) => e.stopPropagation()} // prevent closing when clicking on video
           >
-            <source src={activeVideo.video} type="video/mp4" />
+            <source src={activeVideo} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
