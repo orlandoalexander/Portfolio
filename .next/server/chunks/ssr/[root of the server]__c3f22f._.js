@@ -79,55 +79,53 @@ var __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$g
 ;
 ;
 const metadata = {
-    title: '[Your Name] - Frontend Developer',
-    description: 'Welcome to my portfolio! I am a passionate frontend developer specializing in creating beautiful, responsive, and user-centric web applications. With expertise in modern JavaScript frameworks and UI/UX principles, I transform designs into seamless interactive experiences.',
+    title: "Orlando Alexander - Portfolio",
+    description: "Penultimate-year BSc Data Science student at the University of Bristol, with professional experience as a junior full-stack developer and data science consultant.",
     keywords: [
-        'Frontend Developer',
-        'Web Developer',
-        'React Developer',
-        'Next.js',
-        'TypeScript',
-        'JavaScript',
-        'UI/UX',
-        'Responsive Design',
-        'Web Animation',
-        'Modern Web Development',
-        'CSS Expert',
-        'Performance Optimization',
-        'Web Accessibility',
-        'Component Design',
-        '[Your Name]'
+        "Frontend Developer",
+        "Web Developer",
+        "React Developer",
+        "JavaScript",
+        "UI/UX",
+        "Modern Web Development",
+        "CSS Expert",
+        "Full-Stack Developer",
+        "Backend Development",
+        "Database Management",
+        "SQL",
+        "Data Science Consultant",
+        "Data Analysis",
+        "Machine Learning",
+        "Python",
+        "Pandas",
+        "NumPy",
+        "Data Visualisation",
+        "Robotics",
+        "Automation",
+        "AI",
+        "Orlando Alexander"
     ],
     authors: [
         {
-            name: '[Your Name]'
+            name: "Orlando Alexander"
         }
     ],
-    creator: '[Your Name]',
+    creator: "Orlando Alexander",
     openGraph: {
-        title: '[Your Name] - Frontend Developer Portfolio',
-        description: 'Passionate frontend developer crafting beautiful and interactive web experiences. Explore my projects and frontend development expertise.',
-        url: 'https://your-domain.com',
-        siteName: '[Your Name] - Portfolio',
+        title: "Orlando Alexander - Portfolio",
+        description: "Penultimate-year BSc Data Science student at the University of Bristol, with professional experience as a junior full-stack developer and data science consultant.",
+        url: "https://orlando-alexander-portfolio.netlify.app",
+        siteName: "Orlando Alexander - Portfolio",
         images: [
             {
-                url: '/og-image.jpg',
+                url: "/orlando-alexander.png",
                 width: 1200,
                 height: 630,
-                alt: '[Your Name] - Frontend Developer Portfolio'
+                alt: "Orlando Alexander"
             }
         ],
-        locale: 'en_US',
-        type: 'website'
-    },
-    twitter: {
-        card: 'summary_large_image',
-        title: '[Your Name] - Frontend Developer',
-        description: 'Passionate frontend developer crafting beautiful and interactive web experiences. Explore my projects and frontend development expertise.',
-        creator: '@yourusername',
-        images: [
-            '/og-image.jpg'
-        ]
+        locale: "en_US",
+        type: "website"
     },
     robots: {
         index: true,
@@ -135,9 +133,9 @@ const metadata = {
         googleBot: {
             index: true,
             follow: true,
-            'max-video-preview': -1,
-            'max-image-preview': 'large',
-            'max-snippet': -1
+            "max-video-preview": -1,
+            "max-image-preview": "large",
+            "max-snippet": -1
         }
     }
 };
@@ -149,13 +147,13 @@ function RootLayout({ children }) {
             children: children
         }, void 0, false, {
             fileName: "[project]/app/layout.tsx",
-            lineNumber: 81,
-            columnNumber: 4
+            lineNumber: 82,
+            columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/layout.tsx",
-        lineNumber: 80,
-        columnNumber: 3
+        lineNumber: 81,
+        columnNumber: 5
     }, this);
 }
 }}),
