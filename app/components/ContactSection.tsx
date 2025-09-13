@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function ContactSection() {
   return (
     <section className="py-20 px-4">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -22,13 +22,13 @@ export default function ContactSection() {
               transition={{ delay: 0.2 }}
             >
               <h2 className="text-4xl font-bold mb-3 text-center bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-transparent bg-clip-text">
-                Actively Seeking Summer 2026 Tech Internships
+                Seeking Summer 2026 Tech Internships
               </h2>
-              <p className="text-gray-600 text-center mb-4">
+              <p className="text-gray-600 text-center mb-6 max-w-xl mx-auto">
                 I am a Data Science undergraduate at the University of Bristol,
                 seeking a Summer 2026 internship in Software Engineering or Data
-                Science. I would be grateful to connect if you have any
-                opportunities available.
+                Science. Ready to contribute fresh perspectives and learn from
+                industry experts.
               </p>
               <div className="flex items-center justify-center gap-2 text-gray-600 mb-8">
                 <svg
@@ -50,7 +50,7 @@ export default function ContactSection() {
                     d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                   />
                 </svg>
-                <span>Bristol | London</span>
+                <span className="font-medium">Bristol | London</span>
               </div>
             </motion.div>
             <div className="flex flex-col items-center gap-6 mb-8">
@@ -80,7 +80,7 @@ export default function ContactSection() {
                 target="_blank"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="flex items-center gap-3 px-8 py-4 bg-gray-50 hover:bg-gray-100 rounded-2xl border border-gray-200 transition-all duration-300"
+                className="w-full sm:w-auto flex items-center justify-center gap-3 px-8 py-4 bg-gray-50 hover:bg-gray-100 rounded-2xl border border-gray-200 transition-all duration-300"
               >
                 <svg
                   className="w-5 h-5 text-gray-600"

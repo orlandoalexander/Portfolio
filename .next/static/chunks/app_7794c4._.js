@@ -385,11 +385,9 @@ const projects = [
 ];
 function ProjectsSection() {
     _s();
-    const [showMore, setShowMore] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
-    const [activeVideo, setActiveVideo] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null); // track video project
+    const [activeVideo, setActiveVideo] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     const [activeTab, setActiveTab] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("All");
     const filteredProjects = activeTab === "All" ? projects : projects.filter((p)=>p.category.includes(activeTab));
-    const visibleProjects = showMore ? filteredProjects : filteredProjects.slice(0, 4);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         className: "py-10 px-8",
         children: [
@@ -410,7 +408,7 @@ function ProjectsSection() {
                         children: "Featured Projects"
                     }, void 0, false, {
                         fileName: "[project]/app/components/ProjectsSection.tsx",
-                        lineNumber: 226,
+                        lineNumber: 221,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -426,12 +424,12 @@ function ProjectsSection() {
                                 children: tab
                             }, tab, false, {
                                 fileName: "[project]/app/components/ProjectsSection.tsx",
-                                lineNumber: 241,
+                                lineNumber: 236,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/app/components/ProjectsSection.tsx",
-                        lineNumber: 234,
+                        lineNumber: 229,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -465,7 +463,7 @@ function ProjectsSection() {
                                                 className: `object-cover transition-opacity duration-500 ${project.image2 ? "group-hover:opacity-0" : ""}`
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/ProjectsSection.tsx",
-                                                lineNumber: 266,
+                                                lineNumber: 261,
                                                 columnNumber: 17
                                             }, this),
                                             project.image2 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -475,14 +473,14 @@ function ProjectsSection() {
                                                 className: "object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/ProjectsSection.tsx",
-                                                lineNumber: 275,
+                                                lineNumber: 270,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "absolute inset-0 bg-gradient-to-t from-white via-white/0 to-transparent"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/ProjectsSection.tsx",
-                                                lineNumber: 282,
+                                                lineNumber: 277,
                                                 columnNumber: 17
                                             }, this),
                                             project.logo && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -495,12 +493,12 @@ function ProjectsSection() {
                                                     className: "object-contain md:w-14 md:h-14"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/components/ProjectsSection.tsx",
-                                                    lineNumber: 285,
+                                                    lineNumber: 280,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/ProjectsSection.tsx",
-                                                lineNumber: 284,
+                                                lineNumber: 279,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -508,13 +506,13 @@ function ProjectsSection() {
                                                 children: project.position
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/ProjectsSection.tsx",
-                                                lineNumber: 295,
+                                                lineNumber: 290,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/components/ProjectsSection.tsx",
-                                        lineNumber: 265,
+                                        lineNumber: 260,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -528,7 +526,7 @@ function ProjectsSection() {
                                                         children: project.title
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/ProjectsSection.tsx",
-                                                        lineNumber: 302,
+                                                        lineNumber: 297,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -537,11 +535,11 @@ function ProjectsSection() {
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                                 onClick: ()=>{
                                                                     if (project.video) {
-                                                                        setActiveVideo(project); // show video popup
+                                                                        setActiveVideo(project.video); // show video popup
                                                                     } else if (project.file) {
                                                                         const link = document.createElement("a");
                                                                         link.href = project.file;
-                                                                        link.download = project.file.split("/").pop(); // gets the filename
+                                                                        link.download = project.file.split("/").pop() || "download";
                                                                         document.body.appendChild(link);
                                                                         link.click();
                                                                         document.body.removeChild(link);
@@ -553,7 +551,7 @@ function ProjectsSection() {
                                                                 children: project.buttonPrimary
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/components/ProjectsSection.tsx",
-                                                                lineNumber: 306,
+                                                                lineNumber: 301,
                                                                 columnNumber: 21
                                                             }, this),
                                                             project.buttonSecondary && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -562,19 +560,19 @@ function ProjectsSection() {
                                                                 children: project.buttonSecondary
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/components/ProjectsSection.tsx",
-                                                                lineNumber: 326,
+                                                                lineNumber: 322,
                                                                 columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/components/ProjectsSection.tsx",
-                                                        lineNumber: 305,
+                                                        lineNumber: 300,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/components/ProjectsSection.tsx",
-                                                lineNumber: 301,
+                                                lineNumber: 296,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -585,7 +583,7 @@ function ProjectsSection() {
                                                         children: project.description
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/ProjectsSection.tsx",
-                                                        lineNumber: 338,
+                                                        lineNumber: 334,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -595,41 +593,41 @@ function ProjectsSection() {
                                                                 children: tag
                                                             }, i, false, {
                                                                 fileName: "[project]/app/components/ProjectsSection.tsx",
-                                                                lineNumber: 343,
+                                                                lineNumber: 339,
                                                                 columnNumber: 23
                                                             }, this))
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/ProjectsSection.tsx",
-                                                        lineNumber: 341,
+                                                        lineNumber: 337,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/components/ProjectsSection.tsx",
-                                                lineNumber: 337,
+                                                lineNumber: 333,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/components/ProjectsSection.tsx",
-                                        lineNumber: 300,
+                                        lineNumber: 295,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, project.title, true, {
                                 fileName: "[project]/app/components/ProjectsSection.tsx",
-                                lineNumber: 257,
+                                lineNumber: 252,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/app/components/ProjectsSection.tsx",
-                        lineNumber: 255,
+                        lineNumber: 250,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/ProjectsSection.tsx",
-                lineNumber: 225,
+                lineNumber: 220,
                 columnNumber: 7
             }, this),
             activeVideo && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -642,33 +640,33 @@ function ProjectsSection() {
                     onClick: (e)=>e.stopPropagation(),
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("source", {
-                            src: activeVideo.video,
+                            src: activeVideo,
                             type: "video/mp4"
                         }, void 0, false, {
                             fileName: "[project]/app/components/ProjectsSection.tsx",
-                            lineNumber: 378,
+                            lineNumber: 365,
                             columnNumber: 13
                         }, this),
                         "Your browser does not support the video tag."
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/components/ProjectsSection.tsx",
-                    lineNumber: 372,
+                    lineNumber: 359,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/components/ProjectsSection.tsx",
-                lineNumber: 368,
+                lineNumber: 355,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/components/ProjectsSection.tsx",
-        lineNumber: 224,
+        lineNumber: 219,
         columnNumber: 5
     }, this);
 }
-_s(ProjectsSection, "4BbeaWAPNnZgLn/VRSc8mTK+/Jw=");
+_s(ProjectsSection, "FN/NtXXwFDtO4GCyqEaWqpWbUgc=");
 _c = ProjectsSection;
 var _c;
 __turbopack_refresh__.register(_c, "ProjectsSection");
@@ -693,7 +691,7 @@ function ContactSection() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         className: "py-20 px-4",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "max-w-5xl mx-auto",
+            className: "max-w-4xl mx-auto",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                 initial: {
                     opacity: 0,
@@ -743,15 +741,15 @@ function ContactSection() {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                         className: "text-4xl font-bold mb-3 text-center bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-transparent bg-clip-text",
-                                        children: "Actively Seeking Summer 2026 Tech Internships"
+                                        children: "Seeking Summer 2026 Tech Internships"
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/ContactSection.tsx",
                                         lineNumber: 24,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-gray-600 text-center mb-4",
-                                        children: "I am a Data Science undergraduate at the University of Bristol, seeking a Summer 2026 internship in Software Engineering or Data Science. I would be grateful to connect if you have any opportunities available."
+                                        className: "text-gray-600 text-center mb-6 max-w-xl mx-auto",
+                                        children: "I am a Data Science undergraduate at the University of Bristol, seeking a Summer 2026 internship in Software Engineering or Data Science. Ready to contribute fresh perspectives and learn from industry experts."
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/ContactSection.tsx",
                                         lineNumber: 27,
@@ -793,6 +791,7 @@ function ContactSection() {
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "font-medium",
                                                 children: "Bristol | London"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/ContactSection.tsx",
@@ -860,7 +859,7 @@ function ContactSection() {
                                         whileTap: {
                                             scale: 0.95
                                         },
-                                        className: "flex items-center gap-3 px-8 py-4 bg-gray-50 hover:bg-gray-100 rounded-2xl border border-gray-200 transition-all duration-300",
+                                        className: "w-full sm:w-auto flex items-center justify-center gap-3 px-8 py-4 bg-gray-50 hover:bg-gray-100 rounded-2xl border border-gray-200 transition-all duration-300",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                                                 className: "w-5 h-5 text-gray-600",
