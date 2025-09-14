@@ -8,7 +8,7 @@ const projects = [
   {
     title: "Tutor Management & Analytics Platform",
     description:
-      "Data-driven platform automating scheduling, invoicing, and performance reporting for 50+ tutors, reducing operational errors and saving 10+ hours of administrative work weekly.",
+      "Data-driven platform automating scheduling, invoicing, and performance reporting for 50+ tutors, significantly reducing operational errors and saving 10+ hours of administrative work weekly.",
     buttonPrimary: "View Demo",
     buttonPrimaryLink: "https://educatchcharity-demo.netlify.app",
     buttonSecondary: "View GitHub",
