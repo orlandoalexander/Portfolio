@@ -225,7 +225,7 @@ const projects = [
     },
     {
         title: "Resource Management Platform",
-        description: "Responsive web portal for volunteer training, enabling organised data management and reducing training time by 30%. Client rated project deliverables 5/5, stating it 'exceeded expectations.'",
+        description: "Responsive web portal for volunteer training, enabling organised data management and reducing training time by 30%. Client rated project deliverables 5/5, stating it 'exceeded expectations'.",
         buttonPrimary: "View Demo",
         buttonPrimaryLink: "https://everyfamily-demo.netlify.app",
         buttonSecondary: "View GitHub",
@@ -333,7 +333,7 @@ const projects = [
     },
     {
         title: "Urban Hydroelectric Generator",
-        description: "Flow-optimised high-rise wastewater energy generator with server-controlled microcontrollers, sensors, and custom 3D-printed components to maximise water head and turbine efficiency. Awarded 100% for novel energy solution.",
+        description: "Flow-optimised high-rise wastewater energy generator with server-controlled microcontrollers, sensors, and custom 3D-printed components to maximise water head and turbine efficiency. Awarded 100% in EPQ for novel solution.",
         buttonPrimary: "Download Report",
         file: "/orlando-alexander-epq-report.pdf",
         buttonSecondary: "View GitHub",
@@ -372,7 +372,7 @@ const projects = [
     },
     {
         title: "'GCSEs won’t prepare me for the real world'",
-        description: "Letter published in the Times Educational Supplement, written in response to the cancellation of my GCSE exams due to COVID-19. I also wrote to my local MP, Mike Penning, and the then education secretary, Gavin Williamson, receiving an encouraging response from both.",
+        description: "Letter published in the Times Educational Supplement, written in response to the cancellation of my GCSE exams due to COVID-19. I also wrote to my local MP, Mike Penning, and the then education secretary, Gavin Williamson, receiving encouraging responses from both.",
         buttonPrimary: "Read Article",
         buttonPrimaryLink: "https://www.tes.com/magazine/archive/dear-madam-letters-editor-10420",
         image: "/tes-cover.png",
