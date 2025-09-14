@@ -120,7 +120,7 @@ const projects = [
     image2: "/inovo-cover2.png",
     logo: "/inovo-logo.png",
     position: "Computer Vision Intern",
-    tags: ["Python", "OpenCV", "rospy", "mlrose", "Canny edge detection"],
+    tags: ["Python", "OpenCV", "rospy", "mlrose"],
     category: ["Data Science"],
   },
   {
@@ -178,7 +178,7 @@ const projects = [
   {
     title: "Urban Hydroelectric Generator",
     description:
-      "Flow-optimised high-rise wastewater energy generator with server-controlled microcontrollers, sensors, and custom 3D-printed components to maximise water head and turbine efficiency. Awarded 100% in EPQ for novel solution.",
+      "Flow-optimised hydroelectric energy generator with server-controlled microcontrollers, sensors, and custom 3D-printed components to maximise wastewater head and turbine efficiency. Awarded 100% in EPQ for novel solution.",
     buttonPrimary: "Download Report",
     file: "/orlando-alexander-epq-report.pdf",
     buttonSecondary: "View GitHub",
