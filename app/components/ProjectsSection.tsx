@@ -8,7 +8,7 @@ const projects = [
   {
     title: "Tutor Management & Analytics Platform",
     description:
-      "Data-driven platform automating scheduling, invoicing, and performance reporting for 50+ tutors, cutting operational errors by 20% and saving 10+ hours of administrative work weekly.",
+      "Data-driven platform automating scheduling, invoicing, and performance reporting for 50+ tutors, reducing operational errors and saving 10+ hours of administrative work weekly.",
     buttonPrimary: "View Demo",
     buttonPrimaryLink: "https://educatchcharity-demo.netlify.app",
     buttonSecondary: "View GitHub",
@@ -124,7 +124,7 @@ const projects = [
     category: ["Data Science"],
   },
   {
-    title: "AI-Driven Video Doorbell & App",
+    title: "AI Video Doorbell & App",
     description:
       "AI-powered video doorbell and companion mobile app, awarded 97% for A Level Computer Science. Sends instant visitor notifications through app, recongises familiar faces using computer vision, and enables remote interaction with visitors.",
     buttonPrimary: "Download Report",
