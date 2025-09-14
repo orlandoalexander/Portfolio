@@ -109,6 +109,19 @@ const projects = [
     ],
     category: ["Data Science"],
   },
+  // {
+  //   title: "AI Customer Support Chatbot",
+  //   description:
+  //     "Letter published in the Times Educational Supplement, written in response to the cancellation of my GCSE exams due to COVID-19. I also wrote to my local MP, Mike Penning, and the then education secretary, Gavin Williamson, receiving encouraging responses from both.",
+  //   buttonPrimary: "Read Article",
+  //   buttonPrimaryLink:
+  //     "https://www.tes.com/magazine/archive/dear-madam-letters-editor-10420",
+  //   image: "/tes-cover.png",
+  //   logo: "/tes-logo.png",
+  //   position: "Correspondent",
+  //   tags: [],
+  //   category: ["Data Science", "Software Engineering"],
+  // },
   {
     title: "Computer Vision Path Optimisation",
     description:
