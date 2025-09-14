@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     siteName: "Orlando Alexander - Portfolio",
     images: [
       {
-        url: "/orlando-alexander.png",
+        url: "https://orlando-alexander-portfolio.netlify.app/orlando-alexander.png",
         width: 1200,
         height: 630,
         alt: "Orlando Alexander",

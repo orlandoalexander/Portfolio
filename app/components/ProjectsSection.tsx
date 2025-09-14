@@ -8,7 +8,7 @@ const projects = [
   {
     title: "Tutor Management & Analytics Platform",
     description:
-      "Data-driven platform automating scheduling, invoicing, and performance reporting for 50+ tutors, significantly reducing operational errors and saving 10+ hours of administrative work weekly.",
+      "Data-driven platform for tutoring agency, automating scheduling, invoicing, and performance reporting for 50+ tutors, saving 10 hours of administrative work weekly and significantly reducing operational errors.",
     buttonPrimary: "View Demo",
     buttonPrimaryLink: "https://educatchcharity-demo.netlify.app",
     buttonSecondary: "View GitHub",
@@ -53,7 +53,7 @@ const projects = [
   {
     title: "ML Workflow & Simulation Studio",
     description:
-      "Machine learning platform powering real-time detection of machine anomalies for BMW Group, ABB, and SIG. Features a drag-and-drop interface to build and simulate complex video and sensor analysis workflows. Contact for demo login.",
+      "Machine learning platform for real-time manufacturing anomaly detection used by BMW Group, ABB, and SIG. Features a drag-and-drop interface to build and simulate complex video and sensor analysis workflows. Contact for demo login.",
     buttonPrimary: "Watch Demo Video",
     video: "/visense-launch-video.mp4",
     image: "/visense-cover.png",
@@ -149,6 +149,19 @@ const projects = [
       "Data Science",
     ],
   },
+  // {
+  //   title: "Data Pipeline for Disease Analysis",
+  //   description:
+  //     "End-to-end data pipeline for Piura, Peru, integrating five years of weather, dengue incidence, census, and expenditure data into a single clean dataset, valued at $15,000 by the client. Enabled predictive analysis of dengue outbreaks and policy insights by standardising, cleaning, and merging multi-source public health and environmental data.",
+  //   buttonPrimary: "View Project on Github",
+  //   buttonPrimaryLink:
+  //     "https://github.com/gr21038/180DCBristol-EcoSwell/blob/main",
+  //   image: "/ecoswell-cover.png",
+  //   logo: "/180dc-logo.png",
+  //   position: "Data Science Advisor",
+  //   tags: ["Raspberry Pi 4", "Enviro+ Sensor Board", "Python", "Cron Job"],
+  //   category: ["Data Science"],
+  // },
   {
     title: "IoT Environmental Data Logger",
     description:
