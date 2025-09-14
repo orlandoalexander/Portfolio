@@ -114,11 +114,11 @@ const metadata = {
     openGraph: {
         title: "Orlando Alexander - Portfolio",
         description: "Penultimate-year BSc Data Science student at the University of Bristol, with professional experience as a junior full-stack developer and data science consultant.",
-        url: "https://orlando-alexander-portfolio.netlify.app",
+        url: "https://orlandoalexander.uk",
         siteName: "Orlando Alexander - Portfolio",
         images: [
             {
-                url: "/orlando-alexander.png",
+                url: "https://orlandoalexander.uk/orlando-alexander.png",
                 width: 1200,
                 height: 630,
                 alt: "Orlando Alexander"

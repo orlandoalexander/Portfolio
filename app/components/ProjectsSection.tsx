@@ -229,13 +229,13 @@ export default function ProjectsSection() {
       : projects.filter((p) => p.category.includes(activeTab));
 
   return (
-    <section className="py-10 px-8">
+    <section className="py-4 px-8">
       <div className="max-w-7xl mx-auto">
         <motion.h2
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="text-3xl font-bold mb-12 text-center text-gray-900"
+          className="text-3xl font-bold mb-6 text-center text-gray-900"
         >
           Featured Projects
         </motion.h2>

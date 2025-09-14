@@ -78,7 +78,7 @@ export default function ContactSection() {
                 </motion.a>
 
                 <motion.a
-                  href="/resume.pdf"
+                  href="/Orlando_Alexander_CV.pdf"
                   target="_blank"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
