@@ -66,7 +66,7 @@ const projects = [
   {
     title: "Resource Management Platform",
     description:
-      "Responsive web portal for volunteer training, enabling organised data management and reducing training time by 30%. Client rated project deliverables 5/5, stating it 'exceeded expectations'.",
+      "Modern web app for volunteer training, enabling organised data management and reducing onboarding time by 30%. Client rated project deliverables 5/5, stating it 'exceeded expectations'.",
     buttonPrimary: "View Demo",
     buttonPrimaryLink: "https://everyfamily-demo.netlify.app",
     buttonSecondary: "View GitHub",
@@ -112,7 +112,7 @@ const projects = [
   {
     title: "Computer Vision Path Optimisation",
     description:
-      "Computer vision system designed to automate and optimise the decoration of bakery goods. Decorating 6 buns in just 20 seconds (compared to the 3–5 minutes for a skilled baker) the system achieves up to 90% greater efficiency.",
+      "Computer vision system automating pastry decoration, 90% more efficient than manual methods. Implemented Canny edge detection, Hough transformations, and clustering algorithms for path optimisation and precision control.",
     buttonPrimary: "View Project on GitHub",
     buttonPrimaryLink:
       "https://github.com/orlandoalexander/Computer-Vision-Project-Inovo-Robotics-Internship/tree/main",
@@ -165,7 +165,7 @@ const projects = [
   {
     title: "IoT Environmental Data Logger",
     description:
-      "Multi-sensor monitoring device designed for remote fieldwork, capturing 10,000+ data points weekly across 8 key data types. Built with Raspberry Pi, featuring offline logging and automated digital reporting for UN SDG climate reporting.",
+      "Integrated monitoring system designed for remote fieldwork, capturing 10,000+ data points weekly across 8 key data types. Built with Raspberry Pi, featuring offline logging and automated digital reporting for UN SDG climate goals.",
     buttonPrimary: "View Project on Github",
     buttonPrimaryLink:
       "https://github.com/orlandoalexander/RaspberryPi-Multi-Sensor",
