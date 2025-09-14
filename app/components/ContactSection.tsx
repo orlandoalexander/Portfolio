@@ -56,7 +56,7 @@ export default function ContactSection() {
             <div className="flex flex-col items-center gap-6 mb-8">
               <div className="flex flex-col items-center gap-4 w-full max-w-[220px] mx-auto">
                 <motion.a
-                  href="mailto:itsorlando@outlook.com"
+                  href="mailto:orlando@orlandoalexander.uk"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="w-full flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl hover:from-blue-700 hover:to-purple-700 transition-all duration-300 font-medium text-white"
