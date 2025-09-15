@@ -18,8 +18,9 @@ export default function HeroSection() {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
             Orlando Alexander
           </h1>
-          <p className="text-xl md:text-2xl text-gray-600 mb-8">
-            Data Science BSc Penultimate Year & Junior Full-Stack Developer
+          <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
+            Second-Year Year BSc Data Science at Univeristy of Bristol & Junior
+            Software Engineer Seeking Summer 2026 Internship Opportunities
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm">
             <span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full border border-blue-200">

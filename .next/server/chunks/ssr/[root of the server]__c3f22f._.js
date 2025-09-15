@@ -80,7 +80,7 @@ var __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$g
 ;
 const metadata = {
     title: "Orlando Alexander - Portfolio",
-    description: "Penultimate-year BSc Data Science student at the University of Bristol, with professional experience as a junior full-stack developer and data science consultant.",
+    description: "BSc Data Science student at the University of Bristol (First-Class Honours, Year 1) with professional experience in software engineering and data science consulting, seeking Summer 2026 internship opportunities.",
     keywords: [
         "Frontend Developer",
         "Web Developer",
@@ -113,7 +113,7 @@ const metadata = {
     creator: "Orlando Alexander",
     openGraph: {
         title: "Orlando Alexander - Portfolio",
-        description: "Penultimate-year BSc Data Science student at the University of Bristol, with professional experience as a junior full-stack developer and data science consultant.",
+        description: "BSc Data Science student at the University of Bristol (First-Class Honours, Year 1) with professional experience in software engineering and data science consulting, seeking Summer 2026 internship opportunities.",
         url: "www.orlandoalexander.uk",
         siteName: "Orlando Alexander - Portfolio",
         images: [

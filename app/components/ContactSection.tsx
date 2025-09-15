@@ -24,13 +24,12 @@ export default function ContactSection() {
               <h2 className="text-4xl font-bold mb-3 text-center bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-transparent bg-clip-text">
                 Seeking Summer 2026 Tech Internships
               </h2>
-              <p className="text-gray-600 text-center mb-6 max-w-xl mx-auto">
-                I am a Data Science undergraduate at the University of Bristol,
-                seeking a Summer 2026 internship in Software Engineering or Data
-                Science. Ready to contribute fresh perspectives and learn from
-                industry experts.
+              <p className="text-gray-600 text-center mb-6 max-w-lg mx-auto">
+                Second-year Data Science undergraduate at the University of
+                Bristol (First-Class Honours, Year 1) with professional
+                experience in software engineering and data science consulting.
               </p>
-              <div className="flex items-center justify-center gap-2 text-gray-600 mb-8">
+              {/* <div className="flex items-center justify-center gap-2 text-gray-600 mb-8">
                 <svg
                   className="w-5 h-5"
                   fill="none"
@@ -50,8 +49,8 @@ export default function ContactSection() {
                     d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                   />
                 </svg>
-                <span className="font-medium">Bristol | London</span>
-              </div>
+                <span className="font-medium">London</span>
+              </div> */}
             </motion.div>
             <div className="flex flex-col items-center gap-6 mb-8">
               <div className="flex flex-col items-center gap-4 w-full max-w-[220px] mx-auto">
