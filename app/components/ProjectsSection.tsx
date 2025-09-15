@@ -76,14 +76,7 @@ const projects = [
     image2: "/everyfamily-cover2.png",
     logo: "/everyfamily-logo.png",
     position: "Software Consultant",
-    tags: [
-      "React 19",
-      "React Query",
-      "Flask (Python)",
-      "MySQL",
-      "GCP",
-      "Docker",
-    ],
+    tags: ["React 19", "React Query", "HTML", "CSS", "Flask (Python)", "MySQL"],
     category: ["Software Engineering"],
   },
   {
