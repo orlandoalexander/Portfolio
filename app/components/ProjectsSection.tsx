@@ -8,7 +8,7 @@ const projects = [
   {
     title: "Tutor Management & Analytics Platform",
     description:
-      "Data-driven platform for tutoring agency, automating scheduling, invoicing, and performance reporting for 50+ tutors, saving 10 hours of administrative work weekly and significantly reducing operational errors.",
+      "Data-driven platform for tutoring agency, automating scheduling, invoicing, and attendance analytics for 50+ students, saving 10 hours of administrative work weekly and significantly reducing operational errors.",
     buttonPrimary: "View Demo",
     buttonPrimaryLink: "https://educatchcharity-demo.netlify.app",
     buttonSecondary: "View GitHub",
@@ -17,7 +17,7 @@ const projects = [
     image: "/educatch-cover.png",
     image2: "/educatch-cover2.png",
     logo: "/educatch-logo.png",
-    position: "Software Developer",
+    position: "Full-Stack Software Engineer",
     tags: [
       "React 18",
       "React Query",
@@ -31,7 +31,7 @@ const projects = [
   {
     title: "Food Aid Insights Dashboard",
     description:
-      "Interactive dashboard processing 5,000 records spanning 3 years of food aid voucher referrals across 100 parameters, delivering insights on regional demand, seasonal trends, and client return patterns to drive targeted aid allocation.",
+      "Interactive data visualisation dashboard processing 5,000 food aid voucher referrals across 100 fields, delivering 3 years of insights on regional demand, seasonal trends, and client return patterns to enable targeted aid allocation.",
     buttonPrimary: "Watch Demo Video",
     buttonSecondary: "View GitHub",
     buttonSecondaryLink: "https://github.com/jaslynlzy/CF_Final",
@@ -53,20 +53,20 @@ const projects = [
   {
     title: "ML Workflow & Simulation Studio",
     description:
-      "Machine learning platform for real-time manufacturing anomaly detection used by BMW Group, ABB, and SIG. Features a drag-and-drop interface to build and simulate complex video and sensor analysis workflows. Contact for demo login.",
+      "Machine learning platform with drag-and-drop interface to create video analysis workflows in under 5 mins. Deployed for major clients including BMW, ABB, and SIG for real-time manufacturing anomaly detection. Contact for demo login.",
     buttonPrimary: "Watch Demo Video",
     video: "/visense-launch-video.mp4",
     image: "/visense-cover.png",
     image2: "/visense-cover2.png",
     logo: "/visense-logo.png",
-    position: "Junior Software Engineer",
+    position: "Junior Software & ML Engineer",
     tags: ["React", "Docker", "Material-UI", "AWS", "TensorFlow", "OpenCV"],
     category: ["Software Engineering"],
   },
   {
     title: "Resource Management Platform",
     description:
-      "Modern web app for volunteer training, enabling organised data management and reducing onboarding time by 30%. Client rated project deliverables 5/5, stating it 'exceeded expectations'.",
+      "Modern web app for volunteer training, improving data management and reducing onboarding time by 30%. Scalabale solution rated 5/5 by client for 'exceeding expectations'.",
     buttonPrimary: "View Demo",
     buttonPrimaryLink: "https://everyfamily-demo.netlify.app",
     buttonSecondary: "View GitHub",
@@ -125,21 +125,21 @@ const projects = [
   {
     title: "Computer Vision Path Optimisation",
     description:
-      "Computer vision system automating pastry decoration, 90% more efficient than manual methods. Implemented Canny edge detection, Hough transformations, and clustering algorithms for path optimisation and precision control.",
+      "Computer vision system to automate pastry decoration, achieving 90% higher efficiency than manual methods. Implemented Canny edge detection, Hough transformations, and clustering algorithms for path optimisation.",
     buttonPrimary: "View Project on GitHub",
     buttonPrimaryLink:
       "https://github.com/orlandoalexander/Computer-Vision-Project-Inovo-Robotics-Internship/tree/main",
     image: "/inovo-cover.png",
     image2: "/inovo-cover2.png",
     logo: "/inovo-logo.png",
-    position: "Computer Vision Intern",
+    position: "Computer Vision Engineer Intern",
     tags: ["Python", "OpenCV", "rospy", "mlrose"],
     category: ["Data Science"],
   },
   {
     title: "AI Video Doorbell & App",
     description:
-      "AI-powered video doorbell and companion mobile app, awarded 97% for A Level Computer Science. Sends instant visitor notifications through app, recongises familiar faces using computer vision, and enables remote interaction with visitors.",
+      "AI-powered video doorbell and companion mobile app, awarded 97% for A Level Computer Science. Sends instant visitor notifications to mobile app, recongises familiar faces using computer vision, and enables remote interaction with guests.",
     buttonPrimary: "Download Report",
     file: "/orlando-alexander-nea-report.pdf",
     buttonSecondary: "View GitHub",
@@ -178,7 +178,7 @@ const projects = [
   {
     title: "IoT Environmental Data Logger",
     description:
-      "Integrated monitoring system designed for remote fieldwork, capturing 10,000+ data points weekly across 8 key data types. Built with Raspberry Pi, featuring offline logging and automated digital reporting for UN SDG climate goals.",
+      "Integrated monitoring system designed for remote fieldwork, capturing 10,000+ data points weekly across 8 key data types. Built on Raspberry Pi, with offline logging for automated reporting on UN SDG goals in remote conditions.",
     buttonPrimary: "View Project on Github",
     buttonPrimaryLink:
       "https://github.com/orlandoalexander/RaspberryPi-Multi-Sensor",
