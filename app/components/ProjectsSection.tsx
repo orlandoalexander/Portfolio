@@ -66,7 +66,7 @@ const projects = [
   {
     title: "Resource Management Platform",
     description:
-      "Modern web app for volunteer training, improving data management and reducing onboarding time by 30%. Scalabale solution rated 5/5 by client for 'exceeding expectations'.",
+      "Modern web app for volunteer training, improving data management and reducing onboarding time by 30%. Scalable solution rated 5/5 by client for 'exceeding expectations'.",
     buttonPrimary: "View Demo",
     buttonPrimaryLink: "https://everyfamily-demo.netlify.app",
     buttonSecondary: "View GitHub",
