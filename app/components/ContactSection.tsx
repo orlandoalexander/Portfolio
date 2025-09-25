@@ -25,8 +25,8 @@ export default function ContactSection() {
                 Seeking Summer 2026 Tech Internships
               </h2>
               <p className="text-gray-600 text-center mb-6 max-w-lg mx-auto">
-                Second-year Data Science undergraduate at the University of
-                Bristol (First-Class Honours, Year 1) with professional
+                Penultimate year Data Science undergraduate at the University of
+                Bristol (First-Class Honours in Year 1) with professional
                 experience in software engineering and data science consulting.
               </p>
               {/* <div className="flex items-center justify-center gap-2 text-gray-600 mb-8">
