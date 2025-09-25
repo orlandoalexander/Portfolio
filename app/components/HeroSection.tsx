@@ -19,7 +19,7 @@ export default function HeroSection() {
             Orlando Alexander
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            Second-Year Year BSc Data Science at Univeristy of Bristol & Junior
+            Penultimate Year BSc Data Science at Univeristy of Bristol & Junior
             Software Engineer Seeking Summer 2026 Internship Opportunities
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm">
