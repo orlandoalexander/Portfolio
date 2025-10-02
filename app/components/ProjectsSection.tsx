@@ -133,7 +133,7 @@ const projects = [
     title: "AI Video Doorbell & App",
     description:
       "AI-powered video doorbell and companion mobile app, awarded 97% for A Level Computer Science. Sends instant visitor notifications to mobile app, recongises familiar faces using computer vision, and enables remote interaction with guests.",
-    buttonPrimary: "Download Report",
+    buttonPrimary: "Read Report",
     file: "/orlando-alexander-nea-report.pdf",
     buttonSecondary: "View GitHub",
     buttonSecondaryLink:
@@ -182,10 +182,22 @@ const projects = [
     category: ["Data Science"],
   },
   {
+    title: "Renewable Energy Data Analysis in Python",
+    description:
+      "Awarded 85% for university coursework analysing 20 years of renewable energy trends across the world using Python. Examined regional growth, disparities in energy transition, and correlation between GDP and fossil fuel reliance.",
+    buttonPrimary: "Read Paper",
+    buttonPrimaryLink: "/orlando-alexander-renewable-energy-paper.pdf",
+    image: "/renewable-energy-paper-cover.png",
+    logo: "/bristol-logo.png",
+    position: "BSc Data Science Student",
+    tags: ["Python", "Pandas", "Numpy", "Matplotlib", "LaTeX"],
+    category: ["Research & Publications"],
+  },
+  {
     title: "Urban Hydroelectric Generator",
     description:
       "Flow-optimised hydroelectric energy generator with server-controlled microcontrollers, sensors, and custom 3D-printed components to maximise wastewater head and turbine efficiency. Awarded 100% in EPQ for novel solution.",
-    buttonPrimary: "Download Report",
+    buttonPrimary: "Read Report",
     file: "/orlando-alexander-epq-report.pdf",
     buttonSecondary: "View GitHub",
     buttonSecondaryLink:
