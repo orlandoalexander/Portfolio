@@ -5,27 +5,17 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 const projects = [
-  {
-    title: "Tutor Management & Analytics Platform",
+   {
+    title: "ML Workflow & Simulation Studio",
     description:
-      "Data-driven platform for tutoring agency, automating scheduling, invoicing, and attendance analytics for 50+ students, saving 10 hours of administrative work weekly and significantly reducing operational errors.",
-    buttonPrimary: "View Demo",
-    buttonPrimaryLink: "https://educatchcharity-demo.netlify.app",
-    buttonSecondary: "View GitHub",
-    buttonSecondaryLink:
-      "https://github.com/orlandoalexander/educatch/tree/main",
-    image: "/educatch-cover.png",
-    image2: "/educatch-cover2.png",
-    logo: "/educatch-logo.png",
-    position: "Full-Stack Software Engineer",
-    tags: [
-      "React 18",
-      "React Query",
-      "Flask (Python)",
-      "MySQL",
-      "GCP",
-      "Docker",
-    ],
+      "Machine learning platform with drag-and-drop interface to create video analysis workflows in under 5 mins. Deployed for major clients including BMW, ABB, and SIG for real-time manufacturing anomaly detection. Contact for demo login.",
+    buttonPrimary: "Watch Demo Video",
+    video: "/visense-launch-video.mp4",
+    image: "/visense-cover.png",
+    image2: "/visense-cover2.png",
+    logo: "/visense-logo.png",
+    position: "Junior Software & ML Engineer",
+    tags: ["React", "Docker", "Material-UI", "AWS", "TensorFlow", "OpenCV"],
     category: ["Software Engineering"],
   },
   {
@@ -51,16 +41,26 @@ const projects = [
     category: ["Data Science"],
   },
   {
-    title: "ML Workflow & Simulation Studio",
+    title: "Tutor Management & Analytics Platform",
     description:
-      "Machine learning platform with drag-and-drop interface to create video analysis workflows in under 5 mins. Deployed for major clients including BMW, ABB, and SIG for real-time manufacturing anomaly detection. Contact for demo login.",
-    buttonPrimary: "Watch Demo Video",
-    video: "/visense-launch-video.mp4",
-    image: "/visense-cover.png",
-    image2: "/visense-cover2.png",
-    logo: "/visense-logo.png",
-    position: "Junior Software & ML Engineer",
-    tags: ["React", "Docker", "Material-UI", "AWS", "TensorFlow", "OpenCV"],
+      "Data-driven platform for tutoring agency, automating scheduling, invoicing, and attendance analytics for 50+ students, saving 10 hours of administrative work weekly and significantly reducing operational errors.",
+    buttonPrimary: "View Demo",
+    buttonPrimaryLink: "https://educatchcharity-demo.netlify.app",
+    buttonSecondary: "View GitHub",
+    buttonSecondaryLink:
+      "https://github.com/orlandoalexander/educatch/tree/main",
+    image: "/educatch-cover.png",
+    image2: "/educatch-cover2.png",
+    logo: "/educatch-logo.png",
+    position: "Full-Stack Software Engineer",
+    tags: [
+      "React 18",
+      "React Query",
+      "Flask (Python)",
+      "MySQL",
+      "GCP",
+      "Docker",
+    ],
     category: ["Software Engineering"],
   },
   {
