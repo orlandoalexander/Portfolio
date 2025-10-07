@@ -19,28 +19,6 @@ const projects = [
     category: ["Software Engineering"],
   },
   {
-    title: "Food Aid Insights Dashboard",
-    description:
-      "Interactive data visualisation dashboard processing 5,000 food aid voucher referrals across 100 fields, delivering 3 years of insights on regional demand, seasonal trends, and client return patterns to enable targeted aid allocation.",
-    buttonPrimary: "Watch Demo Video",
-    buttonSecondary: "View GitHub",
-    buttonSecondaryLink: "https://github.com/jaslynlzy/CF_Final",
-    video: "/cirencester-foodbank-demo-video.mp4",
-    image: "/cirencester-foodbank-cover.png",
-    image2: "/cirencester-foodbank-cover2.png",
-    logo: "/cirencester-foodbank-logo.png",
-    position: "Data Science Consultant",
-    tags: [
-      "Pandas",
-      "NumPy",
-      "Matplotlib",
-      "Seaborn",
-      "Plotly",
-      "Streamlit (Python)",
-    ],
-    category: ["Data Science"],
-  },
-  {
     title: "Tutor Management & Analytics Platform",
     description:
       "Data-driven platform for tutoring agency, automating scheduling, invoicing, and attendance analytics for 50+ students, saving 10 hours of administrative work weekly and significantly reducing operational errors.",
@@ -62,6 +40,28 @@ const projects = [
       "Docker",
     ],
     category: ["Software Engineering"],
+  },
+   {
+    title: "Food Aid Insights Dashboard",
+    description:
+      "Interactive data visualisation dashboard processing 5,000 food aid voucher referrals across 100 fields, delivering 3 years of insights on regional demand, seasonal trends, and client return patterns to enable targeted aid allocation.",
+    buttonPrimary: "Watch Demo Video",
+    buttonSecondary: "View GitHub",
+    buttonSecondaryLink: "https://github.com/jaslynlzy/CF_Final",
+    video: "/cirencester-foodbank-demo-video.mp4",
+    image: "/cirencester-foodbank-cover.png",
+    image2: "/cirencester-foodbank-cover2.png",
+    logo: "/cirencester-foodbank-logo.png",
+    position: "Data Science Consultant",
+    tags: [
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Seaborn",
+      "Plotly",
+      "Streamlit (Python)",
+    ],
+    category: ["Data Science"],
   },
   {
     title: "Resource Management Platform",
