@@ -32,7 +32,7 @@ const projects = [
     logo: "/educatch-logo.png",
     position: "Full-Stack Software Engineer",
     tags: [
-      "React 18",
+      "React",
       "React Query",
       "Flask (Python)",
       "MySQL",
@@ -76,7 +76,7 @@ const projects = [
     image2: "/everyfamily-cover2.png",
     logo: "/everyfamily-logo.png",
     position: "Software Consultant",
-    tags: ["React 19", "React Query", "HTML", "CSS", "Flask (Python)", "MySQL"],
+    tags: ["React", "React Query", "HTML", "CSS", "Flask (Python)", "MySQL"],
     category: ["Software Engineering"],
   },
   {
