@@ -15,7 +15,7 @@ const projects = [
     image2: "/visense-cover2.png",
     logo: "/visense-logo.png",
     position: "Junior Software & ML Engineer",
-    tags: ["React", "Docker", "Material-UI", "AWS", "TensorFlow", "OpenCV"],
+    tags: ["React", "Axios", "Docker", "Material-UI", "AWS", "TensorFlow", "OpenCV"],
     category: ["Software Engineering"],
   },
   {
