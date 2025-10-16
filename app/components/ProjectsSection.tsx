@@ -15,7 +15,7 @@ const projects = [
     image2: "/visense-cover2.png",
     logo: "/visense-logo.png",
     position: "Junior Software & ML Engineer",
-    tags: ["React", "Docker", "Material-UI", "AWS", "TensorFlow", "OpenCV"],
+    tags: ["React", "Axios", "Docker", "Material-UI", "AWS", "Nivo", "OpenCV"],
     category: ["Software Engineering"],
   },
   {
@@ -32,7 +32,7 @@ const projects = [
     logo: "/educatch-logo.png",
     position: "Full-Stack Software Engineer",
     tags: [
-      "React 18",
+      "React",
       "React Query",
       "Flask (Python)",
       "MySQL",
@@ -76,7 +76,7 @@ const projects = [
     image2: "/everyfamily-cover2.png",
     logo: "/everyfamily-logo.png",
     position: "Software Consultant",
-    tags: ["React 19", "React Query", "HTML", "CSS", "Flask (Python)", "MySQL"],
+    tags: ["React", "React Query", "HTML", "CSS", "Flask (Python)", "MySQL"],
     category: ["Software Engineering"],
   },
   {
