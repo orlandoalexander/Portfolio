@@ -8,7 +8,7 @@ const projects = [
    {
     title: "ML Workflow & Simulation Studio",
     description:
-      "Machine learning platform with drag-and-drop interface to create video analysis workflows in under 5 mins. Deployed for major clients including BMW, ABB, and SIG for real-time manufacturing anomaly detection. Contact for demo login.",
+      "Machine learning platform with drag-and-drop canvas to create video analysis workflows in under 5 mins. Deployed for Fortune Global 500 clients such as BMW and ABB for real-time detection of manufacturing anomalies. Contact for demo.",
     buttonPrimary: "Watch Demo Video",
     video: "/visense-launch-video.mp4",
     image: "/visense-cover.png",
