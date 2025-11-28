@@ -25,8 +25,8 @@ export default function ContactSection() {
                 Seeking Summer 2026 Tech Internships
               </h2>
               <p className="text-gray-600 text-center mb-6 max-w-lg mx-auto">
-                Penultimate Year Data Science Undergraduate at the University of
-                Bristol and Incoming Analytics and Modelling Intern at BlackRock.
+                Penultimate year Data Science undergraduate at the University of
+                Bristol and incoming Analytics and Modelling intern at BlackRock.
               </p>
               {/* <div className="flex items-center justify-center gap-2 text-gray-600 mb-8">
                 <svg
