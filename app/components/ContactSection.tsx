@@ -26,8 +26,7 @@ export default function ContactSection() {
               </h2>
               <p className="text-gray-600 text-center mb-6 max-w-lg mx-auto">
                 Penultimate year Data Science undergraduate at the University of
-                Bristol (First-Class in Year 1) with professional
-                experience in software engineering and data science consulting.
+                Bristol and incoming Analytics and Modelling intern at BlackRock.
               </p>
               {/* <div className="flex items-center justify-center gap-2 text-gray-600 mb-8">
                 <svg
