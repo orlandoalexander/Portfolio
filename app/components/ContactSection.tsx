@@ -22,11 +22,10 @@ export default function ContactSection() {
               transition={{ delay: 0.2 }}
             >
               <h2 className="text-4xl font-bold mb-3 text-center bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-transparent bg-clip-text">
-                Seeking Summer 2026 Tech Internships
+                Orlando Alexander
               </h2>
               <p className="text-gray-600 text-center mb-6 max-w-lg mx-auto">
-                Penultimate year Data Science undergraduate at the University of
-                Bristol and incoming Analytics and Modelling intern at BlackRock.
+                Second Year Data Science Undergraduate at the University of Bristol and Incoming Analytics & Modelling Intern at BlackRock
               </p>
               {/* <div className="flex items-center justify-center gap-2 text-gray-600 mb-8">
                 <svg
