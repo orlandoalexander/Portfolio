@@ -25,7 +25,7 @@ export default function ContactSection() {
                 Orlando Alexander
               </h2>
               <p className="text-gray-600 text-center mb-6 max-w-lg mx-auto">
-                Second Year Data Science Undergraduate at the University of Bristol and Incoming Analytics & Modelling Intern at BlackRock
+Incoming Analytics & Modelling Intern @ BlackRock | Data Science @ University of Bristol
               </p>
               {/* <div className="flex items-center justify-center gap-2 text-gray-600 mb-8">
                 <svg
