@@ -5,10 +5,25 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 const projects = [
-   {
+  {
+    title: "Zero-Fee Crypto Marketplace",
+    description:
+      "Web-based blockchain marketplace enabling zero-fee cross-border payments between small businesses and factories. Built on Plasma using USDT, with embedded Privy wallets and smart contract escrow for automated settlement.",
+    buttonPrimary: "Watch Demo Video",
+    buttonSecondary: "View GitHub",
+    buttonSecondaryLink: "https://github.com/orlandoalexander/ethoxford-2026",
+    video: "/eth-oxford-demo-video.mp4",
+    image: "/eth-oxford-cover.png",
+    image2: "/eth-oxford-cover2.png",
+    logo: "/eth-oxford-logo.png",
+    position: "ETHOxford 2026 Hackathon",
+    tags: ["Plasma", "Flare Network", "Privy", "wagmi", "USDT", "Smart Contracts"],
+    category: ["Software Engineering"],
+  },
+  {
     title: "ML Workflow & Simulation Studio",
     description:
-      "Machine learning platform with drag-and-drop canvas to create video analysis workflows in under 5 mins. Deployed for Fortune Global 500 clients such as BMW and ABB for real-time detection of manufacturing anomalies. Contact for demo.",
+      "Machine learning platform with drag-and-drop canvas to create video analysis workflows in under 5 mins. Deployed for Fortune Global 500 clients such as BMW and ABB for real-time detection of manufacturing anomalies.",
     buttonPrimary: "Watch Demo Video",
     video: "/visense-launch-video.mp4",
     image: "/visense-cover.png",
@@ -41,7 +56,7 @@ const projects = [
     ],
     category: ["Software Engineering"],
   },
-   {
+  {
     title: "Food Aid Insights Dashboard",
     description:
       "Interactive data visualisation dashboard processing 5,000 food aid voucher referrals across 100 fields, delivering 3 years of insights on regional demand, seasonal trends, and client return patterns to enable targeted aid allocation.",
@@ -184,7 +199,7 @@ const projects = [
   {
     title: "Renewable Energy Data Analysis in Python",
     description:
-      "Awarded 85% for university coursework analysing 20 years of renewable energy trends across the world using Python. Examined regional growth, disparities in energy transition, and correlation between GDP and fossil fuel reliance.",
+      "Awarded 85% for university coursework analysing 20 years of renewable energy trends across the world. Examined regional growth, disparities in energy transition, and correlation between GDP and fossil fuel reliance.",
     buttonPrimary: "Read Paper",
     buttonPrimaryLink: "/orlando-alexander-renewable-energy-paper.pdf",
     image: "/renewable-energy-paper-cover.png",
@@ -196,7 +211,7 @@ const projects = [
   {
     title: "Urban Hydroelectric Generator",
     description:
-      "Flow-optimised hydroelectric energy generator with server-controlled microcontrollers, sensors, and custom 3D-printed components to maximise wastewater head and turbine efficiency. Awarded 100% in EPQ for novel solution.",
+      "Flow-optimised hydroelectric energy generator with server-controlled microcontrollers and custom 3D-printed components to maximise wastewater head and turbine efficiency. Awarded 100% in EPQ for novel solution.",
     buttonPrimary: "Read Report",
     file: "/orlando-alexander-epq-report.pdf",
     buttonSecondary: "View GitHub",
@@ -267,11 +282,10 @@ export default function ProjectsSection() {
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`px-4 py-2 rounded-md font-medium transition text-sm sm:text-base ${
-                activeTab === tab
-                  ? "bg-blue-600 text-white"
-                  : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-              }`}
+              className={`px-4 py-2 rounded-md font-medium transition text-sm sm:text-base ${activeTab === tab
+                ? "bg-blue-600 text-white"
+                : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                }`}
             >
               {tab}
             </button>
@@ -293,9 +307,8 @@ export default function ProjectsSection() {
                   src={project.image}
                   alt={project.title}
                   fill
-                  className={`object-cover transition-opacity duration-500 ${
-                    project.image2 ? "group-hover:opacity-0" : ""
-                  }`}
+                  className={`object-cover transition-opacity duration-500 ${project.image2 ? "group-hover:opacity-0" : ""
+                    }`}
                 />
                 {project.image2 && (
                   <Image
