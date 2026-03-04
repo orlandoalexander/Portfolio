@@ -336,8 +336,7 @@ export default function ProjectsSection() {
                     alt={project.title}
                     fill
                     priority={index < 4}
-                    className={`object-cover transition-opacity duration-500 ${project.image2 ? "group-hover:opacity-0" : ""
-                      }`}
+                    className="object-cover"
                   />
                   {project.image2 && (
                     <Image
