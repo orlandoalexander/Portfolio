@@ -19,7 +19,7 @@ export default function HeroSection() {
             Orlando Alexander
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
-Incoming Analytics & Modelling Intern @ BlackRock | Data Science @ University of Bristol
+            Data Science Student at Bristol | Incoming Analytics & Modelling Intern at BlackRock | Co-Founder, Budge Up | Head of Data Science, 180DC
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm">
             <span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full border border-blue-200">
