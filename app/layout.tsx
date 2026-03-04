@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Orlando Alexander - Portfolio",
   description:
-    "BSc Data Science student at the University of Bristol (First-Class Honours, Year 1) with professional experience in software engineering and data science consulting, seeking Summer 2026 internship opportunities.",
+    "Data Science Student at University of Bristol and Incoming Analytics & Modelling Intern at BlackRock.",
   keywords: [
     "Frontend Developer",
     "Web Developer",
