@@ -1,10 +1,33 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 
 const projects = [
+  {
+    title: "Sprout - Agentic AI Personal Tutor",
+    description:
+      "AI learning platform that builds a personalised 3D knowledge graph and adaptive learning pathways from a student’s learning history, allowing exploration of connections between concepts using natural hand gestures.",
+    buttonPrimary: "Watch Demo Video",
+    buttonSecondary: "View Devpost",
+    buttonSecondaryLink: "https://devpost.com/software/sprout-ydop7w?_gl=1*1lap4ag*_ga*MzAzNTc1ODM0LjE3NzA1Njg3NjI",
+    video: "/hackeurope-demo-video.mp4",
+    image: "/hackeurope-cover.jpeg",
+    image2: "/hackeurope-cover2.jpeg",
+    logo: "/hackeurope-logo.png",
+    logoFill: true,
+    position: "HackEurope 2026 Hackathon",
+    tags: [
+      "agentsdk",
+      "ElevenLabs",
+      "Claude",
+      "OpenCV",
+      "Next.js",
+      "Python"
+    ],
+    category: ["Software Engineering", "Data Science"],
+  },
   {
     title: "Zero-Fee Crypto Marketplace",
     description:
@@ -13,9 +36,10 @@ const projects = [
     buttonSecondary: "View GitHub",
     buttonSecondaryLink: "https://github.com/orlandoalexander/ethoxford-2026",
     video: "/eth-oxford-demo-video.mp4",
-    image: "/eth-oxford-cover.png",
-    image2: "/eth-oxford-cover2.png",
-    logo: "/eth-oxford-logo.png",
+    image: "/eth-oxford-cover.jpg",
+    image2: "/eth-oxford-cover2.jpg",
+    logo: "/eth-oxford-logo.jpeg",
+    logoFill: true,
     position: "ETHOxford 2026 Hackathon",
     tags: ["Plasma", "Flare Network", "Privy", "wagmi", "USDT", "Smart Contracts"],
     category: ["Software Engineering"],
@@ -263,7 +287,7 @@ export default function ProjectsSection() {
 
   return (
     <section className="py-4 px-8">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-[82rem] mx-auto">
         <motion.h2
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -272,126 +296,135 @@ export default function ProjectsSection() {
         >
           Featured Projects
         </motion.h2>
-        <div className="flex flex-wrap justify-center gap-2 mb-8">
-          {[
-            "All",
-            "Software Engineering",
-            "Data Science",
-            "Research & Publications",
-          ].map((tab) => (
-            <button
-              key={tab}
-              onClick={() => setActiveTab(tab)}
-              className={`px-4 py-2 rounded-md font-medium transition text-sm sm:text-base ${activeTab === tab
-                ? "bg-blue-600 text-white"
-                : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-                }`}
-            >
-              {tab}
-            </button>
-          ))}
+        <div className="flex justify-center mb-10">
+          <div className="flex bg-gray-100 rounded-lg p-1">
+            {[
+              "All",
+              "Software Engineering",
+              "Data Science",
+              "Research & Publications",
+            ].map((tab) => (
+              <button
+                key={tab}
+                onClick={() => setActiveTab(tab)}
+                className={`px-4 py-2 rounded-md text-sm font-medium transition ${activeTab === tab
+                  ? "bg-white shadow text-gray-900"
+                  : "text-gray-600 hover:text-gray-900"
+                  }`}
+              >
+                {tab}
+              </button>
+            ))}
+          </div>
         </div>
-
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {filteredProjects.map((project, index) => (
-            <motion.div
-              key={project.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.01 }}
-              transition={{ delay: index * 0.05, duration: 0.2 }}
-              className="group relative bg-white rounded-xl overflow-hidden backdrop-blur-sm border border-gray-200 shadow-lg"
-            >
-              <div className="relative aspect-video overflow-hidden">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className={`object-cover transition-opacity duration-500 ${project.image2 ? "group-hover:opacity-0" : ""
-                    }`}
-                />
-                {project.image2 && (
+          <AnimatePresence mode="popLayout">
+            {filteredProjects.map((project, index) => (
+              <motion.div
+                key={`${activeTab}-${project.title}`}
+                initial={{ opacity: 0.4, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, transition: { duration: 0.05 } }}
+                viewport={{ once: true, amount: 0.1 }}
+                transition={{ duration: 0.3, delay: (index % 2) * 0.08, ease: "easeOut" }}
+                whileHover={{ y: -4, transition: { duration: 0.2 } }}
+                className="group relative bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-md hover:shadow-xl transition-shadow duration-300"
+              >
+                <div className="relative aspect-video overflow-hidden bg-gray-800">
                   <Image
-                    src={project.image2}
-                    alt={`${project.title} - alternate view`}
+                    src={project.image}
+                    alt={project.title}
                     fill
-                    className="object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                    priority={index < 4}
+                    className={`object-cover transition-opacity duration-500 ${project.image2 ? "group-hover:opacity-0" : ""
+                      }`}
                   />
-                )}
-                <div className="absolute inset-0 bg-gradient-to-t from-white via-white/0 to-transparent" />
-                {project.logo && (
-                  <div className="absolute bottom-2 left-2 w-10 h-10 md:w-16 md:h-16 rounded-full bg-white p-1 md:p-2 shadow-lg flex items-center justify-center overflow-hidden">
+                  {project.image2 && (
                     <Image
-                      src={project.logo}
-                      alt={`${project.title} logo`}
-                      width={40}
-                      height={40}
-                      className="object-contain md:w-14 md:h-14"
+                      src={project.image2}
+                      alt={`${project.title} - alternate view`}
+                      fill
+                      loading="eager"
+                      className="object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100"
                     />
-                  </div>
-                )}
-
-                <div className="absolute bottom-3 right-2 bg-blue-50 text-blue-700 text-xs font-medium px-2 py-1 rounded block">
-                  {project.position}
-                </div>
-              </div>
-
-              <div className="flex flex-col justify-between p-4 h-52 md:h-48">
-                <div className="flex flex-wrap justify-between items-center mb-3 gap-2">
-                  <h3 className="text-base md:text-xl font-bold text-gray-900">
-                    {project.title}
-                  </h3>
-                  <div className="flex gap-2">
-                    <button
-                      onClick={() => {
-                        if (project.video) {
-                          setActiveVideo(project.video); // show video popup
-                        } else if (project.file) {
-                          const link = document.createElement("a");
-                          link.href = project.file;
-                          link.download =
-                            project.file.split("/").pop() || "download";
-                          document.body.appendChild(link);
-                          link.click();
-                          document.body.removeChild(link);
-                        } else {
-                          window.open(project.buttonPrimaryLink, "_blank");
-                        }
-                      }}
-                      className="px-2 py-1 bg-blue-600 text-white text-sm font-semibold rounded-lg shadow-sm hover:bg-blue-700 active:bg-blue-800 transition-colors duration-200"
+                  )}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-black/0 to-transparent" />
+                  {project.logo && (
+                    <div
+                      className={`absolute bottom-3 left-3 w-12 h-12 md:w-14 md:h-14 rounded-full shadow-md flex items-center justify-center overflow-hidden ${project.logoFill ? "" : "bg-white p-3"
+                        }`}
                     >
-                      {project.buttonPrimary}
-                    </button>
-                    {project.buttonSecondary && (
+                      <Image
+                        src={project.logo}
+                        alt={`${project.title} logo`}
+                        fill
+                        className={`object-contain ${project.logoFill ? "" : "p-1"}`}
+                      />
+                    </div>
+                  )}
+
+                  <div className="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm text-gray-800 text-xs font-semibold px-3 py-1 rounded-full shadow-sm">
+                    {project.position}
+                  </div>
+                </div>
+
+                <div className="flex flex-col justify-between p-4 h-56 md:h-52">
+                  <div className="flex flex-wrap justify-between items-center mb-3 gap-2">
+                    <h3 className="text-base md:text-xl font-bold text-gray-900">
+                      {project.title}
+                    </h3>
+                    <div className="flex gap-2">
                       <button
-                        onClick={() =>
-                          window.open(project.buttonSecondaryLink, "_blank")
-                        }
-                        className="px-2 py-1 border border-gray-300 text-gray-700 text-sm font-semibold rounded-lg hover:bg-gray-100 active:bg-gray-200 transition-colors duration-200"
+                        onClick={() => {
+                          if (project.video) {
+                            setActiveVideo(project.video); // show video popup
+                          } else if (project.file) {
+                            const link = document.createElement("a");
+                            link.href = project.file;
+                            link.download =
+                              project.file.split("/").pop() || "download";
+                            document.body.appendChild(link);
+                            link.click();
+                            document.body.removeChild(link);
+                          } else {
+                            window.open(project.buttonPrimaryLink, "_blank");
+                          }
+                        }}
+                        className="px-3 py-1.5 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition"
                       >
-                        {project.buttonSecondary}
+                        {project.buttonPrimary}
                       </button>
-                    )}
+                      {project.buttonSecondary && (
+                        <button
+                          onClick={() =>
+                            window.open(project.buttonSecondaryLink, "_blank")
+                          }
+                          className="px-2 py-1 border border-gray-300 text-gray-700 text-sm font-semibold rounded-lg hover:bg-gray-100 active:bg-gray-200 transition-colors duration-200"
+                        >
+                          {project.buttonSecondary}
+                        </button>
+                      )}
+                    </div>
+                  </div>
+                  <div className="overflow-y-auto">
+                    <p className="text-sm md:text-base text-gray-600 mb-4">
+                      {project.description}
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      {project.tags.map((tag, i) => (
+                        <span
+                          key={i}
+                          className="text-xs px-2.5 py-1 rounded-md bg-gray-100 text-gray-600"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
                   </div>
                 </div>
-                <div className="overflow-y-auto">
-                  <p className="text-sm md:text-base text-gray-600 mb-4">
-                    {project.description}
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    {project.tags.map((tag, i) => (
-                      <span
-                        key={i}
-                        className="text-sm px-3 py-1 rounded-full bg-blue-50 text-blue-700"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-          ))}
+              </motion.div>
+            ))}
+          </AnimatePresence>
         </div>
       </div>
 
