@@ -6,7 +6,7 @@ export default function HeroSection() {
   return (
     <section className="relative h-1/3 py-10 flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]" />
+        <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,transparent_0%,white_8%,white_70%,rgba(255,255,255,0)_100%)] md:[mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]" />
       </div>
 
       <div className="relative z-10 text-center px-4">
