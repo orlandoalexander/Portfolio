@@ -15,26 +15,26 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-gray-900">
             Orlando Alexander
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto">
             Data Science at University of Bristol | Incoming Analytics & Modelling Intern at BlackRock | Hackathon Winner | Co-Founder | 180 Degrees Consulting
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm">
-            <span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full border border-blue-200">
+            <span className="px-4 py-2 bg-gray-100 text-gray-700 rounded-full border border-gray-200">
               Software Engineering
             </span>
-            <span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full border border-blue-200">
+            <span className="px-4 py-2 bg-gray-100 text-gray-700 rounded-full border border-gray-200">
               Data Science
             </span>
-            <span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full border border-blue-200">
+            <span className="px-4 py-2 bg-gray-100 text-gray-700 rounded-full border border-gray-200">
               Machine Learning
             </span>
-            <span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full border border-blue-200">
+            <span className="px-4 py-2 bg-gray-100 text-gray-700 rounded-full border border-gray-200">
               Hackathons
             </span>
-            <span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full border border-blue-200">
+            <span className="px-4 py-2 bg-gray-100 text-gray-700 rounded-full border border-gray-200">
               Consulting
             </span>
           </div>

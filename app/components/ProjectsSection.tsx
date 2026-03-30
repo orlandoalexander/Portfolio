@@ -338,7 +338,7 @@ export default function ProjectsSection() {
           Featured Projects
         </motion.h2>
         <div className="flex justify-center mb-10">
-          <div className="flex bg-gray-100 rounded-lg p-1">
+          <div className="flex gap-1 bg-gray-50 border border-gray-200 rounded-xl p-1.5">
             {[
               "All",
               "Software Engineering",
@@ -348,12 +348,18 @@ export default function ProjectsSection() {
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
-                className={`px-4 py-2 rounded-md text-sm font-medium transition ${activeTab === tab
-                  ? "bg-white shadow text-gray-900"
-                  : "text-gray-600 hover:text-gray-900"
-                  }`}
+                className="relative px-5 py-2 rounded-lg text-sm font-medium transition-colors duration-200"
               >
-                {tab}
+                {activeTab === tab && (
+                  <motion.div
+                    layoutId="activeTab"
+                    className="absolute inset-0 bg-gray-900 rounded-lg shadow-sm"
+                    transition={{ type: "spring", stiffness: 400, damping: 30 }}
+                  />
+                )}
+                <span className={`relative z-10 ${activeTab === tab ? "text-white" : "text-gray-500 hover:text-gray-800"}`}>
+                  {tab}
+                </span>
               </button>
             ))}
           </div>
@@ -363,15 +369,15 @@ export default function ProjectsSection() {
             {filteredProjects.map((project, index) => (
               <motion.div
                 key={`${activeTab}-${project.title}`}
-                initial={{ opacity: 0.4, y: 30 }}
+                initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, transition: { duration: 0.05 } }}
+                exit={{ opacity: 0, y: -10, transition: { duration: 0.15 } }}
                 viewport={{ once: true, amount: 0.1 }}
-                transition={{ duration: 0.3, delay: (index % 2) * 0.08, ease: "easeOut" }}
+                transition={{ duration: 0.35, delay: (index % 2) * 0.06 + Math.floor(index / 2) * 0.04, ease: "easeOut" }}
                 whileHover={{ y: -4, transition: { duration: 0.2 } }}
-                className="group relative bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-md hover:shadow-xl transition-shadow duration-300"
+                className="group relative bg-white rounded-2xl overflow-hidden shadow-[0_1px_3px_rgba(0,0,0,0.08),0_4px_12px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.12)] transition-shadow duration-300"
               >
-                <div className="relative aspect-video overflow-hidden bg-gray-800">
+                <div className="relative aspect-video overflow-hidden bg-white">
                   <Image
                     src={project.image}
                     alt={project.title}
@@ -408,7 +414,7 @@ export default function ProjectsSection() {
                   </div>
                 </div>
 
-                <div className="flex flex-col gap-4 px-4 pt-4 pb-0 h-56 md:h-52">
+                <div className="flex flex-col gap-4 px-4 pt-4 pb-4">
                   <div className="flex flex-wrap justify-between items-center mb-0.5 gap-2">
                     <h3 className="text-base md:text-xl font-bold text-gray-900">
                       {project.title}
@@ -431,7 +437,7 @@ export default function ProjectsSection() {
                               window.open(project.buttonPrimaryLink, "_blank");
                             }
                           }}
-                          className="px-3 py-1.5 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition"
+                          className="px-3 py-1.5 bg-gray-900 text-white text-sm font-medium rounded-lg hover:bg-gray-800 transition"
                         >
                           {project.buttonPrimary}
                         </button>
@@ -441,7 +447,7 @@ export default function ProjectsSection() {
                           onClick={() =>
                             window.open(project.buttonSecondaryLink, "_blank")
                           }
-                          className="px-2 py-1 border border-gray-300 text-gray-700 text-sm font-semibold rounded-lg hover:bg-gray-100 active:bg-gray-200 transition-colors duration-200"
+                          className="px-3 py-1.5 border border-gray-300 text-gray-700 text-sm font-medium rounded-lg hover:bg-gray-100 active:bg-gray-200 transition-colors duration-200"
                         >
                           {project.buttonSecondary}
                         </button>

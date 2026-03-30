@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function ContactSection() {
   return (
@@ -12,8 +13,8 @@ export default function ContactSection() {
           viewport={{ once: true }}
           className="relative p-12 rounded-3xl overflow-hidden backdrop-blur-xl border border-gray-200 bg-white shadow-lg"
         >
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50" />
-          <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center opacity-30" />
+          <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-gray-50 to-gray-100" />
+          <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center opacity-10" />
           <div className="relative z-10">
             <motion.div
               initial={{ opacity: 0, y: 10 }}
@@ -21,7 +22,17 @@ export default function ContactSection() {
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
             >
-              <h2 className="text-4xl font-bold mb-3 text-center bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-transparent bg-clip-text">
+              <div className="flex justify-center mb-5">
+                <div className="relative w-24 h-24 rounded-full overflow-hidden ring-2 ring-gray-200 shadow-lg">
+                  <Image
+                    src="/headshot.png"
+                    alt="Orlando Alexander"
+                    fill
+                    className="object-cover object-top"
+                  />
+                </div>
+              </div>
+              <h2 className="text-4xl font-bold mb-3 text-center text-gray-900">
                 Orlando Alexander
               </h2>
               <p className="text-gray-600 text-center mb-6 max-w-2xl mx-auto">
@@ -51,12 +62,12 @@ export default function ContactSection() {
               </div> */}
             </motion.div>
             <div className="flex flex-col items-center gap-6 mb-8">
-              <div className="flex flex-col items-center gap-4 w-full max-w-[220px] mx-auto">
+              <div className="flex items-center justify-center gap-4">
                 <motion.a
                   href="mailto:orlando@orlandoalexander.uk"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="w-full flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl hover:from-blue-700 hover:to-purple-700 transition-all duration-300 font-medium text-white"
+                  className="flex items-center justify-center gap-3 px-8 py-4 bg-gray-900 rounded-2xl hover:bg-gray-800 transition-all duration-300 font-medium text-white"
                 >
                   <svg
                     className="w-5 h-5"
@@ -79,7 +90,7 @@ export default function ContactSection() {
                   target="_blank"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="w-full flex items-center justify-center gap-3 px-8 py-4 bg-gray-50 hover:bg-gray-100 rounded-2xl border border-gray-200 transition-all duration-300"
+                  className="flex items-center justify-center gap-3 px-8 py-4 bg-gray-50 hover:bg-gray-100 rounded-2xl border border-gray-200 transition-all duration-300"
                 >
                   <svg
                     className="w-5 h-5 text-gray-600"
@@ -103,10 +114,10 @@ export default function ContactSection() {
                   target="_blank"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="group flex items-center justify-center p-4 bg-blue-50 hover:bg-blue-100 rounded-xl border border-blue-200 transition-all duration-300"
+                  className="group flex items-center justify-center p-4 bg-gray-50 hover:bg-gray-100 rounded-xl border border-gray-200 transition-all duration-300"
                 >
                   <svg
-                    className="w-6 h-6 text-blue-600 group-hover:text-blue-700 transition-colors"
+                    className="w-6 h-6 text-gray-700 group-hover:text-gray-900 transition-colors"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
@@ -118,10 +129,10 @@ export default function ContactSection() {
                   target="_blank"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="group flex items-center justify-center p-4 bg-purple-50 hover:bg-purple-100 rounded-xl border border-purple-200 transition-all duration-300"
+                  className="group flex items-center justify-center p-4 bg-gray-50 hover:bg-gray-100 rounded-xl border border-gray-200 transition-all duration-300"
                 >
                   <svg
-                    className="w-6 h-6 text-purple-600 group-hover:text-purple-700 transition-colors"
+                    className="w-6 h-6 text-gray-700 group-hover:text-gray-900 transition-colors"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
