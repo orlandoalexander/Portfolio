@@ -24,8 +24,8 @@ export default function ContactSection() {
               <h2 className="text-4xl font-bold mb-3 text-center bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-transparent bg-clip-text">
                 Orlando Alexander
               </h2>
-              <p className="text-gray-600 text-center mb-6 max-w-lg mx-auto">
-                Data Science Student at University of Bristol | Incoming Analytics & Modelling Intern at BlackRock | Co-Founder, Budge Up | Head of Data Science, 180DC
+              <p className="text-gray-600 text-center mb-6 max-w-2xl mx-auto">
+                Data Science at University of Bristol | Incoming Analytics & Modelling Intern at BlackRock | Hackathon Winner | Co-Founder | 180 Degrees Consulting
               </p>
               {/* <div className="flex items-center justify-center gap-2 text-gray-600 mb-8">
                 <svg

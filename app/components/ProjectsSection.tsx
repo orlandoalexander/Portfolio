@@ -6,6 +6,26 @@ import { useState } from "react";
 
 const projects = [
   {
+    title: "Viva - ED Recovery Content Shield",
+    description:
+      "AI-powered Chrome extension that shields eating disorder recovery by instantly hiding triggering content across social media platforms, using Claude to provide research-backed content classification with a connected therapist dashboard.",
+    buttonPrimary: "Watch Demo Video",
+    buttonSecondary: "View Devpost",
+    buttonSecondaryLink: "https://devpost.com/software/viva-eating-disorder-recovery-support",
+    video: "/viva-demo-video.mp4",
+    image: "/viva-cover.png",
+    image2: "/viva-cover2.jpeg",
+    logo: "/imperial-logo.png",
+    logoFill: true,
+    position: "Claude Builder Club Hackathon @ Imperial 2026 - 1st Place",
+    tags: [
+      "Claude API",
+      "Chrome Extension",
+      "React",
+    ],
+    category: ["Software Engineering", "Data Science"],
+  },
+  {
     title: "Sprout - Agentic AI Personal Tutor",
     description:
       "AI learning platform that builds a personalised 3D knowledge graph and adaptive learning pathways from a student’s learning history, allowing exploration of connections between concepts using natural hand gestures.",
@@ -17,7 +37,7 @@ const projects = [
     image2: "/hackeurope-cover2.jpeg",
     logo: "/hackeurope-logo.png",
     logoFill: true,
-    position: "HackEurope 2026 Hackathon",
+    position: "HackEurope Hackathon 2026 - Stockholm",
     tags: [
       "agentsdk",
       "ElevenLabs",
@@ -40,7 +60,7 @@ const projects = [
     image2: "/eth-oxford-cover2.jpg",
     logo: "/eth-oxford-logo.jpeg",
     logoFill: true,
-    position: "ETHOxford 2026 Hackathon",
+    position: "ETH Oxford Hackathon 2026",
     tags: ["Plasma", "Flare Network", "Privy", "wagmi", "USDT", "Smart Contracts"],
     category: ["Software Engineering"],
   },
@@ -53,7 +73,7 @@ const projects = [
     image: "/visense-cover.png",
     image2: "/visense-cover2.png",
     logo: "/visense-logo.png",
-    position: "Junior Software & ML Engineer",
+    position: "Junior Software & ML Engineer - Berlin",
     tags: ["React", "Axios", "Docker", "Material-UI", "AWS", "Nivo", "OpenCV"],
     category: ["Software Engineering"],
   },
@@ -69,7 +89,7 @@ const projects = [
     image: "/educatch-cover.png",
     image2: "/educatch-cover2.png",
     logo: "/educatch-logo.png",
-    position: "Full-Stack Software Engineer",
+    position: "Full-Stack Software Engineer - UK",
     tags: [
       "React",
       "React Query",
@@ -91,7 +111,7 @@ const projects = [
     image: "/cirencester-foodbank-cover.png",
     image2: "/cirencester-foodbank-cover2.png",
     logo: "/cirencester-foodbank-logo.png",
-    position: "Data Science Consultant",
+    position: "Data Science Consultant - 180DC",
     tags: [
       "Pandas",
       "NumPy",
@@ -101,6 +121,26 @@ const projects = [
       "Streamlit (Python)",
     ],
     category: ["Data Science"],
+  },
+  {
+    title: "Carbon-Efficient Fraud Detection",
+    description:
+      "Evaluated six ML models for credit card fraud detection, weighing predictive performance against environmental cost. Random Forest achieved the best efficiency score, balancing F1 performance with minimal carbon emissions.",
+    buttonPrimary: "View Presentation",
+    file: "/bdss-datathon-presentation.pptx",
+    image: "/datathon-cover.jpeg",
+    image2: "/datathon-cover2.jpeg",
+    logo: "/bristol-logo.png",
+    position: "Bristol DSS x Lloyds Datathon 2026 - 3rd Place",
+    tags: [
+      "XGBoost",
+      "LightGBM",
+      "Random Forest",
+      "TabNet",
+      "Optuna",
+      "Python",
+    ],
+    category: ["Data Science", "Research & Publications"],
   },
   {
     title: "Resource Management Platform",
@@ -114,7 +154,7 @@ const projects = [
     image: "/everyfamily-cover.png",
     image2: "/everyfamily-cover2.png",
     logo: "/everyfamily-logo.png",
-    position: "Software Consultant",
+    position: "Software Consultant - 180DC",
     tags: ["React", "React Query", "HTML", "CSS", "Flask (Python)", "MySQL"],
     category: ["Software Engineering"],
   },
@@ -128,9 +168,9 @@ const projects = [
       "https://github.com/orlandoalexander/Moda-Personal-Assistant/blob/master",
     video: "/le-wagon-demo-video.mp4",
     image: "/le-wagon-cover.png",
-    image2: "/le-wagon-cover2.png",
+    image2: "/le-wagon-cover2.jpeg",
     logo: "/le-wagon-logo.png",
-    position: "Data Science Bootcamp",
+    position: "10 Week Data Science Bootcamp - Mexico City",
     tags: [
       "TensorFlow",
       "Keras",
@@ -164,7 +204,7 @@ const projects = [
     image: "/inovo-cover.png",
     image2: "/inovo-cover2.png",
     logo: "/inovo-logo.png",
-    position: "Computer Vision Engineer Intern",
+    position: "Computer Vision Engineer Intern - UK",
     tags: ["Python", "OpenCV", "rospy", "mlrose"],
     category: ["Data Science"],
   },
@@ -215,8 +255,9 @@ const projects = [
     buttonPrimaryLink:
       "https://github.com/orlandoalexander/RaspberryPi-Multi-Sensor",
     image: "/ecoswell-cover.png",
+    image2: "/ecoswell-cover2.jpg",
     logo: "/ecoswell-logo.png",
-    position: "Renewable Energy Intern",
+    position: "Renewable Energy Intern - Peru",
     tags: ["Raspberry Pi 4", "Enviro+ Sensor Board", "Python", "Cron Job"],
     category: ["Data Science"],
   },
@@ -228,7 +269,7 @@ const projects = [
     buttonPrimaryLink: "/orlando-alexander-renewable-energy-paper.pdf",
     image: "/renewable-energy-paper-cover.png",
     logo: "/bristol-logo.png",
-    position: "BSc Data Science Student",
+    position: "BSc Data Science Student - Yr 1",
     tags: ["Python", "Pandas", "Numpy", "Matplotlib", "LaTeX"],
     category: ["Research & Publications"],
   },
@@ -367,32 +408,34 @@ export default function ProjectsSection() {
                   </div>
                 </div>
 
-                <div className="flex flex-col justify-between p-4 h-56 md:h-52">
-                  <div className="flex flex-wrap justify-between items-center mb-3 gap-2">
+                <div className="flex flex-col gap-4 px-4 pt-4 pb-0 h-56 md:h-52">
+                  <div className="flex flex-wrap justify-between items-center mb-0.5 gap-2">
                     <h3 className="text-base md:text-xl font-bold text-gray-900">
                       {project.title}
                     </h3>
                     <div className="flex gap-2">
-                      <button
-                        onClick={() => {
-                          if (project.video) {
-                            setActiveVideo(project.video); // show video popup
-                          } else if (project.file) {
-                            const link = document.createElement("a");
-                            link.href = project.file;
-                            link.download =
-                              project.file.split("/").pop() || "download";
-                            document.body.appendChild(link);
-                            link.click();
-                            document.body.removeChild(link);
-                          } else {
-                            window.open(project.buttonPrimaryLink, "_blank");
-                          }
-                        }}
-                        className="px-3 py-1.5 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition"
-                      >
-                        {project.buttonPrimary}
-                      </button>
+                      {project.buttonPrimary && (
+                        <button
+                          onClick={() => {
+                            if (project.video) {
+                              setActiveVideo(project.video); // show video popup
+                            } else if (project.file) {
+                              const link = document.createElement("a");
+                              link.href = project.file;
+                              link.download =
+                                project.file.split("/").pop() || "download";
+                              document.body.appendChild(link);
+                              link.click();
+                              document.body.removeChild(link);
+                            } else {
+                              window.open(project.buttonPrimaryLink, "_blank");
+                            }
+                          }}
+                          className="px-3 py-1.5 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition"
+                        >
+                          {project.buttonPrimary}
+                        </button>
+                      )}
                       {project.buttonSecondary && (
                         <button
                           onClick={() =>
