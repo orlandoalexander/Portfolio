@@ -23,7 +23,7 @@ const projects = [
       "Chrome Extension",
       "React",
     ],
-    category: ["Software Engineering", "Data Science"],
+    category: ["Software Engineering"],
   },
   {
     title: "Sprout - Agentic AI Personal Tutor",
@@ -46,7 +46,7 @@ const projects = [
       "Next.js",
       "Python"
     ],
-    category: ["Software Engineering", "Data Science"],
+    category: ["Software Engineering"],
   },
   {
     title: "Zero-Fee Crypto Marketplace",
@@ -329,36 +329,29 @@ export default function ProjectsSection() {
   return (
     <section className="py-4 px-8">
       <div className="max-w-[82rem] mx-auto">
-        <motion.h2
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="text-3xl font-bold mb-6 text-center text-gray-900"
-        >
-          Featured Projects
-        </motion.h2>
-        <div className="flex justify-center mb-10">
-          <div className="flex gap-1 bg-gray-50 border border-gray-200 rounded-xl p-1.5">
+        <div className="flex justify-center mb-10 px-2">
+          <div className="flex gap-1 bg-gray-50 border border-gray-200 rounded-xl p-1.5 overflow-hidden">
             {[
-              "All",
-              "Software Engineering",
-              "Data Science",
-              "Research & Publications",
+              { key: "All", label: "All", mobileLabel: "All" },
+              { key: "Software Engineering", label: "Software Engineering", mobileLabel: "Software" },
+              { key: "Data Science", label: "Data Science", mobileLabel: "Data" },
+              { key: "Research & Publications", label: "Research & Publications", mobileLabel: "Research" },
             ].map((tab) => (
               <button
-                key={tab}
-                onClick={() => setActiveTab(tab)}
-                className="relative px-5 py-2 rounded-lg text-sm font-medium transition-colors duration-200"
+                key={tab.key}
+                onClick={() => setActiveTab(tab.key)}
+                className="relative px-3 md:px-5 py-2 rounded-lg text-xs md:text-sm font-medium transition-colors duration-200 whitespace-nowrap"
               >
-                {activeTab === tab && (
+                {activeTab === tab.key && (
                   <motion.div
                     layoutId="activeTab"
                     className="absolute inset-0 bg-gray-900 rounded-lg shadow-sm"
-                    transition={{ type: "spring", stiffness: 400, damping: 30 }}
+                    transition={{ type: "spring", stiffness: 500, damping: 35, bounce: 0 }}
                   />
                 )}
-                <span className={`relative z-10 ${activeTab === tab ? "text-white" : "text-gray-500 hover:text-gray-800"}`}>
-                  {tab}
+                <span className={`relative z-10 ${activeTab === tab.key ? "text-white" : "text-gray-500 hover:text-gray-800"}`}>
+                  <span className="hidden md:inline">{tab.label}</span>
+                  <span className="md:hidden">{tab.mobileLabel}</span>
                 </span>
               </button>
             ))}
@@ -409,7 +402,7 @@ export default function ProjectsSection() {
                     </div>
                   )}
 
-                  <div className="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm text-gray-800 text-xs font-semibold px-3 py-1 rounded-full shadow-sm">
+                  <div className="absolute bottom-2 right-2 md:bottom-3 md:right-3 bg-white/90 backdrop-blur-sm text-gray-800 text-[10px] md:text-xs font-semibold px-2 md:px-3 py-1 rounded-full shadow-sm max-w-[70%] truncate">
                     {project.position}
                   </div>
                 </div>

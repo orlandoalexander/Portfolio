@@ -5,13 +5,13 @@ import Image from "next/image";
 
 export default function ContactSection() {
   return (
-    <section className="py-20 px-4">
-      <div className="max-w-4xl mx-auto">
+    <section className="py-20 px-8">
+      <div className="max-w-[82rem] mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="relative p-12 rounded-3xl overflow-hidden backdrop-blur-xl border border-gray-200 bg-white shadow-lg"
+          className="relative p-6 md:p-12 rounded-3xl overflow-hidden backdrop-blur-xl border border-gray-200 bg-white shadow-lg"
         >
           <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-gray-50 to-gray-100" />
           <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center opacity-10" />
@@ -32,10 +32,10 @@ export default function ContactSection() {
                   />
                 </div>
               </div>
-              <h2 className="text-4xl font-bold mb-3 text-center text-gray-900">
+              <h2 className="text-2xl md:text-4xl font-bold mb-3 text-center text-gray-900">
                 Orlando Alexander
               </h2>
-              <p className="text-gray-600 text-center mb-6 max-w-2xl mx-auto">
+              <p className="text-sm md:text-base text-gray-600 text-center mb-6 max-w-2xl mx-auto">
                 Data Science at University of Bristol | Incoming Analytics & Modelling Intern at BlackRock | Hackathon Winner | Co-Founder | 180 Degrees Consulting
               </p>
               {/* <div className="flex items-center justify-center gap-2 text-gray-600 mb-8">
@@ -61,13 +61,13 @@ export default function ContactSection() {
                 <span className="font-medium">London</span>
               </div> */}
             </motion.div>
-            <div className="flex flex-col items-center gap-6 mb-8">
-              <div className="flex items-center justify-center gap-4">
+            <div className="flex flex-col items-center gap-4 md:gap-6 mb-6 md:mb-8">
+              <div className="flex items-center justify-center gap-3 md:gap-4">
                 <motion.a
                   href="mailto:orlando@orlandoalexander.uk"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="flex items-center justify-center gap-3 px-8 py-4 bg-gray-900 rounded-2xl hover:bg-gray-800 transition-all duration-300 font-medium text-white"
+                  className="flex items-center justify-center gap-2 px-6 py-3 md:px-8 md:py-4 bg-gray-900 rounded-xl md:rounded-2xl hover:bg-gray-800 transition-all duration-300 font-medium text-white text-sm md:text-base"
                 >
                   <svg
                     className="w-5 h-5"
@@ -90,7 +90,7 @@ export default function ContactSection() {
                   target="_blank"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="flex items-center justify-center gap-3 px-8 py-4 bg-gray-50 hover:bg-gray-100 rounded-2xl border border-gray-200 transition-all duration-300"
+                  className="flex items-center justify-center gap-2 px-6 py-3 md:px-8 md:py-4 bg-gray-50 hover:bg-gray-100 rounded-xl md:rounded-2xl border border-gray-200 transition-all duration-300 text-sm md:text-base"
                 >
                   <svg
                     className="w-5 h-5 text-gray-600"

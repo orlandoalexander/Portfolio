@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  themeColor: "#f9fafb",
   title: "Orlando Alexander - Portfolio",
   description:
     "Data Science at University of Bristol | Incoming Analytics & Modelling Intern at BlackRock | Hackathon Winner | Co-Founder | 180 Degrees Consulting",
@@ -81,8 +82,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="theme-color" content="#f9fafb" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50`}
       >
         {children}
         <GoogleAnalytics gaId="G-3EKPK776NZ" />

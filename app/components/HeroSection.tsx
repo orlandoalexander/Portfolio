@@ -15,26 +15,26 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-gray-900">
+          <h1 className="text-3xl md:text-7xl font-bold mb-4 md:mb-6 text-gray-900 whitespace-nowrap">
             Orlando Alexander
           </h1>
-          <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto">
+          <p className="text-sm md:text-2xl text-gray-600 mb-6 md:mb-8 max-w-4xl mx-auto px-2">
             Data Science at University of Bristol | Incoming Analytics & Modelling Intern at BlackRock | Hackathon Winner | Co-Founder | 180 Degrees Consulting
           </p>
-          <div className="flex flex-wrap justify-center gap-4 text-sm">
-            <span className="px-4 py-2 bg-gray-100 text-gray-700 rounded-full border border-gray-200">
+          <div className="flex flex-wrap justify-center gap-2 md:gap-4 text-xs md:text-sm">
+            <span className="px-3 py-1.5 md:px-4 md:py-2 bg-gray-100 text-gray-700 rounded-full border border-gray-200">
               Software Engineering
             </span>
-            <span className="px-4 py-2 bg-gray-100 text-gray-700 rounded-full border border-gray-200">
+            <span className="px-3 py-1.5 md:px-4 md:py-2 bg-gray-100 text-gray-700 rounded-full border border-gray-200">
               Data Science
             </span>
-            <span className="px-4 py-2 bg-gray-100 text-gray-700 rounded-full border border-gray-200">
+            <span className="px-3 py-1.5 md:px-4 md:py-2 bg-gray-100 text-gray-700 rounded-full border border-gray-200">
               Machine Learning
             </span>
-            <span className="px-4 py-2 bg-gray-100 text-gray-700 rounded-full border border-gray-200">
+            <span className="px-3 py-1.5 md:px-4 md:py-2 bg-gray-100 text-gray-700 rounded-full border border-gray-200">
               Hackathons
             </span>
-            <span className="px-4 py-2 bg-gray-100 text-gray-700 rounded-full border border-gray-200">
+            <span className="px-3 py-1.5 md:px-4 md:py-2 bg-gray-100 text-gray-700 rounded-full border border-gray-200">
               Consulting
             </span>
           </div>
