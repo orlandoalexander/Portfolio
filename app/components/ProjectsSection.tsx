@@ -18,6 +18,7 @@ const projects = [
     logo: "/imperial-logo.png",
     logoFill: true,
     position: "Claude Builder Club Hackathon @ Imperial 2026 - 1st Place",
+    positionMobile: "Claude Builder Club Hackathon - 1st Place",
     tags: [
       "Claude API",
       "Chrome Extension",
@@ -403,7 +404,8 @@ export default function ProjectsSection() {
                   )}
 
                   <div className="absolute bottom-2 right-2 md:bottom-3 md:right-3 bg-white/90 backdrop-blur-sm text-gray-800 text-[10px] md:text-xs font-semibold px-2 md:px-3 py-1 rounded-full shadow-sm max-w-[70%] truncate">
-                    {project.position}
+                    <span className="hidden md:inline">{project.position}</span>
+                    <span className="md:hidden">{project.positionMobile || project.position}</span>
                   </div>
                 </div>
 
