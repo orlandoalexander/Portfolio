@@ -128,7 +128,7 @@ const projects = [
     description:
       "Evaluated six ML models for credit card fraud detection, weighing predictive performance against environmental cost. Random Forest achieved the best efficiency score, balancing F1 performance with minimal carbon emissions.",
     buttonPrimary: "View Presentation",
-    file: "/bdss-datathon-presentation.pptx",
+    file: "/bdss-datathon-presentation.pdf",
     image: "/datathon-cover.jpeg",
     image2: "/datathon-cover2.jpeg",
     logo: "/bristol-logo.png",
