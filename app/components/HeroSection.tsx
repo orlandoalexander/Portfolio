@@ -29,6 +29,9 @@ export default function HeroSection() {
               AI & ML
             </span>
             <span className="px-3 py-1.5 md:px-4 md:py-2 bg-gray-100 text-gray-700 rounded-full border border-gray-200">
+              Software Engineering
+            </span>
+            <span className="px-3 py-1.5 md:px-4 md:py-2 bg-gray-100 text-gray-700 rounded-full border border-gray-200">
               Hackathons
             </span>
             <span className="px-3 py-1.5 md:px-4 md:py-2 bg-gray-100 text-gray-700 rounded-full border border-gray-200">
